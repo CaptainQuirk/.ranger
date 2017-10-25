@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Cloning nerd-fonts repository"
-cd ~/Documents/source
+cd ~/Documents/src
 git clone https://github.com/ryanoasis/nerd-fonts.git
 
 echo "Installing SourceCodePro"
