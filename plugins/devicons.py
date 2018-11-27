@@ -110,7 +110,20 @@ file_node_exact_matches = {
     'procfile'                         : ''
 }
 
+folder_exact_matches = {
+    'Code'     : '',
+    '.config'  : '',
+    'Downloads': '',
+    'Pictures' : '',
+    'Music'    : '',
+    'mail'     : '',
+    'Videos'   : '',
+    'bin'      : ''
+}
+
 def devicon(file):
     filename, file_extension = os.path.splitext(file)
-    if os.path.isdir(file): return ''
+    if os.path.isdir(file):
+        return folder_exact_matches.get(filename, '')
+
     return file_node_exact_matches.get(file, file_node_extensions.get(file_extension, ''))
