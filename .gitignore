@@ -1,4 +1,5 @@
 plugins/__init__.py
+plugins/__pycache__
 *.pyo
 
 history
